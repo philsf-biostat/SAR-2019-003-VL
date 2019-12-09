@@ -2,10 +2,10 @@ source('scripts/input.R')
 library(atable)
 
 tabela.desc <- atable::atable(face, target_cols = c(
-  "SEXO",
-  "IDADE",
-  "ALTURA",
-  "PESO",
+  "Sexo",
+  "Idade",
+  "Altura",
+  "Peso",
   "IMC"
 ), format_to = "Console")
 
