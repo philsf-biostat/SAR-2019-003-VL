@@ -11,6 +11,11 @@ face <- data.table(face)
 face[str_to_lower(`LADO TXA`) == "esq"]$`LADO TXA` <- "Esq"
 face[str_to_lower(`LADO TXA`) == "dir"]$`LADO TXA` <- "Dir"
 face$`LADO TXA` <- factor(face$`LADO TXA`)
+face$Sexo <- factor(rep(NA, nrow(face)), levels = c("F", "M"))
+face$Idade <- rep(as.numeric(NA), nrow(face))
+face$Altura <- rep(as.numeric(NA), nrow(face))
+face$Peso <- rep(as.numeric(NA), nrow(face))
+face$IMC <- rep(as.numeric(NA), nrow(face)) #face$Peso/(face$Altura^2)
 
 face$txa <- rep(as.numeric(NA), nrow(face))
 face$ctr <- rep(as.numeric(NA), nrow(face))
@@ -22,7 +27,21 @@ face[`LADO TXA` == "Esq"]$ctr <- face[`LADO TXA` == "Esq"]$DIR
 
 # trim cols ---------------------------------------------------------------
 
-face <- face[, .(SEQ, DATA, DIR, ESQ, LADO=`LADO TXA`, COR=COLORAÇÃO, txa, ctr)]
+face <- face[, .(
+  SEQ,
+  Sexo,
+  Idade,
+  Altura,
+  Peso,
+  IMC,
+  DATA,
+  DIR,
+  ESQ,
+  LADO=`LADO TXA`,
+  COR=COLORAÇÃO,
+  txa,
+  ctr
+  )]
 
 # long format -------------------------------------------------------------
 face.long <- tidyr::gather(data = face[, -"COR" ], key = "group", value = "dreno", ctr, txa)
