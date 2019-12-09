@@ -12,7 +12,7 @@ face[str_to_lower(`LADO TXA`) == "esq"]$`LADO TXA` <- "Esq"
 face[str_to_lower(`LADO TXA`) == "dir"]$`LADO TXA` <- "Dir"
 face$`LADO TXA` <- factor(face$`LADO TXA`)
 face$SEXO <- factor(rep(NA, nrow(face)), levels = c("F", "M"))
-face$IDADE <- rep(NA, nrow(face))
+face$IDADE <- rep(as.numeric(NA), nrow(face))
 
 face$txa <- rep(as.numeric(NA), nrow(face))
 face$ctr <- rep(as.numeric(NA), nrow(face))
