@@ -118,6 +118,20 @@ Esta análise foi realizada utilizando-se o software `R` versão 3.6.1.
 
 Table: **Tabela 1** Características demográficas da amostra do estudo piloto.
 
+## Efetividade do tratamento
+
+
+---------------------------------------------------------------------------
+        &nbsp;               ctr            txa         p     test    SMD  
+----------------------- -------------- ------------- ------- ------ -------
+         **n**                19            19                             
+
+ **dreno (mean (SD))**   10.05 (5.66)   5.32 (2.67)   0.002          1.070 
+---------------------------------------------------------------------------
+
+Table: **Tabela 2** Avaliação da efetividade do tratamento com áxido tranexâmico (txa) em comparação ao lado controle (ctr);
+SMD = standardized mean difference -- estimativa do tamanho do efeito observado
+
 <!-- # Exceções e Desvios do teste -->
 
 # Conclusões
