@@ -22,7 +22,16 @@ face[`LADO TXA` == "Esq"]$ctr <- face[`LADO TXA` == "Esq"]$DIR
 
 # trim cols ---------------------------------------------------------------
 
-face <- face[, .(SEQ, DATA, DIR, ESQ, LADO=`LADO TXA`, COR=COLORAÇÃO, txa, ctr)]
+face <- face[, .(
+  SEQ,
+  DATA,
+  DIR,
+  ESQ,
+  LADO=`LADO TXA`,
+  COR=COLORAÇÃO,
+  txa,
+  ctr
+  )]
 
 # long format -------------------------------------------------------------
 face.long <- tidyr::gather(data = face[, -"COR" ], key = "group", value = "dreno", ctr, txa)
