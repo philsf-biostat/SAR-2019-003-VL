@@ -1,4 +1,4 @@
 source('scripts/input.R')
 library(atable)
 
-with(face, (t.test(txa, ctr, paired = TRUE)))
+t.test(dreno ~ group, face.long, paired = TRUE)
