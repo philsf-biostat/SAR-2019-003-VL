@@ -42,3 +42,4 @@ face <- face[, .(
 
 # long format -------------------------------------------------------------
 face.long <- tidyr::gather(data = face[, -"COR" ], key = "group", value = "dreno", ctr, txa)
+face.long$group <- factor(face.long$group)
