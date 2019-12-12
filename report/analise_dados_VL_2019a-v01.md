@@ -81,39 +81,45 @@ Esta análise foi realizada utilizando-se o software `R` versão 3.6.1.
 ----------------- -----------
   Observations               
 
-                      19     
+                      23     
 
-      Sexo                   
+      SEXO                   
 
-        F           0% (0)   
+        F          100% (23) 
 
         M           0% (0)   
 
-     missing       100% (19) 
+     missing        0% (0)   
 
-      Idade                  
+      IDADE                  
 
-    Mean (SD)      NaN (NA)  
+       yes          0% (0)   
 
- valid (missing)    0 (19)   
+       no           0% (0)   
 
-     Altura                  
+     missing       100% (23) 
 
-    Mean (SD)      NaN (NA)  
+     ALTURA                  
 
- valid (missing)    0 (19)   
+       yes          0% (0)   
 
-      Peso                   
+       no           0% (0)   
 
-    Mean (SD)      NaN (NA)  
+     missing       100% (23) 
 
- valid (missing)    0 (19)   
+      PESO                   
+
+       yes          0% (0)   
+
+       no           0% (0)   
+
+     missing       100% (23) 
 
        IMC                   
 
     Mean (SD)      NaN (NA)  
 
- valid (missing)    0 (19)   
+ valid (missing)    0 (23)   
 -----------------------------
 
 Table: **Tabela 1** Características demográficas da amostra do estudo piloto.
@@ -121,13 +127,13 @@ Table: **Tabela 1** Características demográficas da amostra do estudo piloto.
 ## Efetividade do tratamento
 
 
----------------------------------------------------------------------------
-        &nbsp;               ctr            txa         p     test    SMD  
------------------------ -------------- ------------- ------- ------ -------
-         **n**                19            19                             
+----------------------------------------------------------------------------
+        &nbsp;               ctr            txa         p      test    SMD  
+----------------------- -------------- ------------- -------- ------ -------
+         **n**                23            23                              
 
- **dreno (mean (SD))**   10.05 (5.66)   5.32 (2.67)   0.002          1.070 
----------------------------------------------------------------------------
+ **dreno (mean (SD))**   10.30 (5.06)   4.96 (2.46)   <0.001          1.345 
+----------------------------------------------------------------------------
 
 Table: **Tabela 2** Avaliação da efetividade do tratamento com áxido tranexâmico (txa) em comparação ao lado controle (ctr);
 SMD = standardized mean difference -- estimativa do tamanho do efeito observado
