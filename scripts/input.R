@@ -4,7 +4,7 @@ library(stringr)
 
 # colunas extras (vazias) não importadas do dataset
 face <- read_excel("dataset/Resultados TXA Felipe.xlsx", 
-                   sheet = "face", range = "A3:L22")
+                   sheet = "face", skip = 1)
 face <- data.table(face)
 
 # data management ---------------------------------------------------------
