@@ -11,11 +11,8 @@ face <- data.table(face)
 face[str_to_lower(`LADO TXA`) == "esq"]$`LADO TXA` <- "Esq"
 face[str_to_lower(`LADO TXA`) == "dir"]$`LADO TXA` <- "Dir"
 face$`LADO TXA` <- factor(face$`LADO TXA`)
-face$Sexo <- factor(rep(NA, nrow(face)), levels = c("F", "M"))
-face$Idade <- rep(as.numeric(NA), nrow(face))
-face$Altura <- rep(as.numeric(NA), nrow(face))
-face$Peso <- rep(as.numeric(NA), nrow(face))
-face$IMC <- rep(as.numeric(NA), nrow(face)) #face$Peso/(face$Altura^2)
+face$SEXO <- factor(face$SEXO, levels = c("F", "M"))
+face$IMC <- face$PESO/(face$ALTURA^2)
 
 face$txa <- rep(as.numeric(NA), nrow(face))
 face$ctr <- rep(as.numeric(NA), nrow(face))
@@ -29,10 +26,10 @@ face[`LADO TXA` == "Esq"]$ctr <- face[`LADO TXA` == "Esq"]$DIR
 
 face <- face[, .(
   SEQ,
-  Sexo,
-  Idade,
-  Altura,
-  Peso,
+  SEXO,
+  IDADE,
+  ALTURA,
+  PESO,
   IMC,
   DATA,
   DIR,
