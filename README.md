@@ -1,6 +1,6 @@
-# Análise de Dados projeto piloto em cirurgias plásticas de face (D'Or, 2019)
+# Eficácia de Áxido tranexâmico na redução de edema em cirurgias plásticas de face: projeto piloto
 
-Efetividade do uso de Áxido tranexâmico na redução de edema em cirurgias plásticas de face: projeto piloto
+Análise de Dados projeto piloto em cirurgias plásticas de face (D'Or, 2019)
 
 ## Análises realizadas
 
