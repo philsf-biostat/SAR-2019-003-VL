@@ -1,7 +1,7 @@
 ---
-title: "Análise Estatística de ..."
+title: "Eficácia do Ácido tranexâmico na redução de edema em cirurgias plásticas de face: projeto piloto"
 author: '**De:** Felipe Figueiredo **Para:** Victor Lima'
-date: '**Data: ** dd/mm/aaaa'
+date: '**Data:** 2020-02-04'
 output:
   html_document:
     fig_caption: yes

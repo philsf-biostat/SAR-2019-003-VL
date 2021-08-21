@@ -1,4 +1,4 @@
-# Eficácia de Áxido tranexâmico na redução de edema em cirurgias plásticas de face: projeto piloto
+# Eficácia do Ácido tranexâmico na redução de edema em cirurgias plásticas de face: projeto piloto
 
 Análise de Dados projeto piloto em cirurgias plásticas de face (D'Or, 2019)
 
