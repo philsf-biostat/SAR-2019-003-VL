@@ -1,6 +1,6 @@
 # Eficácia do Ácido tranexâmico na redução de edema em cirurgias plásticas de face: projeto piloto
 
-Objetivo
+Avaliar a eficácia do ácido tranexâmico na redução de volume de dreno em cirurgias de face pareando lados randomizados de cada paciente.
 
 Análise de Dados projeto piloto em cirurgias plásticas de face (D'Or, 2019)
 
